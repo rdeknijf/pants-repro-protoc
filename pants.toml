@@ -1,0 +1,12 @@
+[GLOBAL]
+pants_version = "2.22.0"
+backend_packages = [
+  "pants.backend.experimental.codegen.protobuf.go",
+  "pants.backend.experimental.go",
+]
+
+[golang]
+cgo_enabled = false
+cgo_tool_search_paths = ["/usr/bin"]
+go_search_paths = ["/usr/bin"]
+minimum_expected_version = "1.23"
